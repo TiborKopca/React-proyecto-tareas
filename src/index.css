@@ -1,0 +1,73 @@
+/* *********************************** */
+/* *** GENERALAL STYLES *** */
+/* *********************************** */
+
+/* Typography */
+@font-face {
+  font-family: "Lato-bold";
+  src: url("./font/lato-bold-webfont.woff2") format("woff2"),
+    url("./font/lato-bold-webfont.woff") format("woff");
+}
+
+:root {
+  /* ******************************** */
+  /* COLORS */
+  /* ******************************** */
+  --color-bg-primary: rgb(38, 38, 38);
+  --color-bg-primary-gradient: rgb(141, 141, 141);
+  --color-bg-secondary: rgb(221, 221, 221);
+  --color-bg-secondary-gradient: rgb(183 183 183);
+  --color-bg-calculator: rgb(83, 83, 83);
+  /* --color-key-primary: #b1b1b1; */
+  --color-key-primary: rgb(201 201 201);
+  --color-key-secondary: rgb(223, 223, 223);
+  --color-key-active: #d4d4d4;
+  --color-key-operator: #888888;
+  --color-result-text: #0a0a0a;
+  --color-bg-result: #f1f0f0;
+  --color-text-white: #f7f7f7;
+  --shadow-color-black: rgb(0, 0, 0);
+
+  /* OLD */
+  /* --background-color-light: #f5f6f7; */
+  /* --background-color-dark: #1b1b32; */
+  /* --background-color-dark-alt: rgb(24 107 112); */
+  /* --text-color-light: rgb(245, 246, 247); */
+  /* --text-color-dark: rgb(27, 27, 50); */
+
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: Lato-bold, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: system light dark;
+  color: var(--text-color-light);
+  background: radial-gradient(
+    circle,
+    var(--color-bg-primary-gradient) 10%,
+    var(--color-bg-primary) 100%
+  );
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--background-color-dark);
+    /* background-color: var(--background-color-light); */
+    background: radial-gradient(
+      circle,
+      var(--color-bg-secondary-gradient) 10%,
+      var(--color-bg-primary-gradient) 100%
+    );
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: var(--background-color-light);
+  }
+}

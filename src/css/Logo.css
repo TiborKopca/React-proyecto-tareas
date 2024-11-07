@@ -1,0 +1,37 @@
+/* LOGO START */
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 2rem; */
+}
+
+.logo {
+  height: 10em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(4px 5px 1em #000);
+}
+/* .logo.tk:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  } */
+
+@keyframes logo-spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+/* LOGO END */
