@@ -1,15 +1,12 @@
 # Tasks Web App (Practice of the React Framework)
 
 ## Description & Functionality
-<!-- * In the vertical mode shows the landing page -->
-<!-- * In the horizontal mode shows the calculator -->
-<!-- - File structure by Vite
+- File structure by Vite
 - Typography(imported, woff2 format) : Lato-bold
 - Uses prefered color scheme for dark and light mode defined by user system
 - FLEXBOX GRID
-- math operations imported from [mathjs 13.2.0](http://mathjs.org)
-- number keys rendered from array using map function
-- limitation to the screen size from input and from results set to 10characters -->
+- Using PropTypes for validation
+- Using [React Icons library 5.3.0](https://react-icons.github.io/react-icons/) for icons
 
 
 ## Online Link

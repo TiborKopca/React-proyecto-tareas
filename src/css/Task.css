@@ -1,0 +1,53 @@
+.container__task {
+  width: 100%;
+  height: auto;
+
+  background-color: rgb(47 64 91);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  border-radius: 0.5rem;
+  border: 1px solid rgb(236, 236, 236);
+
+  cursor: pointer;
+
+  font-size: 1.2em;
+}
+
+.task-text {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-wrap: anywhere;
+
+  font-size: inherit;
+  /* padding: 1rem; */
+  /* border-radius: 0.5rem; */
+  /* background-color: var(--color-key-secondary); */
+  /* margin-bottom: 1rem; */
+}
+
+.task-icon {
+  /* width: 1.5rem; */
+  /* height: 1.5rem; */
+  /* margin: 0.3rem; */
+  display: flex;
+  font-size: inherit;
+}
+
+/* COMPLETED TASK */
+.completed {
+  background-color: rgb(94, 11, 204);
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+

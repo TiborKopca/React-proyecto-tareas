@@ -15,48 +15,53 @@ body {
   background-color:transparent;
 }
 
-
 .app {
-  min-height: 100dvh;
+  /* min-height: 100dvh; */
   min-width: 100dvw;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
 }
 
+/* LIST OF TASKS */
 .main__container {
-  /* min-height: 37.5rem; */
+  min-height: 37.5rem;
   height: auto;
   /* align-items: flex-start; */
   /* width: 100svw; */
   /* height: 100svh; */
-  /* background-color: var(--color-bg-calculator); */
+  /* background-color: rgb(173, 173, 173); */
+  background: linear-gradient(rgb(197 197 197) 0%, rgb(127 127 127) 100%);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: .5rem solid var(--color-border-light);
 }
 
 h1 {
   max-width: 58.75rem;
-  margin: 2.5rem 0;
   min-width: 100%;
-  /* font-size: 2.5em; */
   text-align: center;
-  color: #ededed;
-  margin-top: 2rem;
+  color: var(--color-font-white);
+  padding-bottom: 2rem;
   
   line-height: 1.1;
   font-weight: 700;
   font-size: clamp(2em, 3vw, 5em);
-  /* font-size: 3rem; */
   font-style: normal;
   letter-spacing: 0.6875rem;
 }
+
+
+
+
 
 
 .grid__container {
