@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 1rem;
+  padding: .5rem;
   margin-bottom: 1rem;
 
   border-radius: 0.5rem;
@@ -19,6 +19,16 @@
 
   font-size: 1.2em;
 }
+/* ALTERNATING COLORS */
+.container__task:nth-child(3n + 1) {
+  background-color: rgba(47,64, 91, 1);
+}
+.container__task:nth-child(3n + 2) {
+  background-color: rgba(47, 64, 91, 0.8);
+}
+.container__task:nth-child(3n + 3) {
+  background-color: rgba(47, 64, 91, 0.6);
+}
 
 .task-text {
   width: 100%;
@@ -26,7 +36,7 @@
 
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   overflow-wrap: anywhere;
 
   font-size: inherit;
@@ -40,8 +50,10 @@
   /* width: 1.5rem; */
   /* height: 1.5rem; */
   /* margin: 0.3rem; */
+  padding: 1rem;
   display: flex;
   font-size: inherit;
+  position: relative;
 }
 
 /* COMPLETED TASK */
@@ -51,3 +63,25 @@
   opacity: 0.4;
 }
 
+.tooltip{
+  position: absolute;
+  bottom: 80%; /* Position above the element */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 1em;
+  white-space: nowrap;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* SHOWS THE TOOLTIP WHEN THE USER HOVERS OVER THE DELETE ICON */
+.task-icon:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,7 @@
+.container__tasklist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    width: -webkit-fill-available;
+}

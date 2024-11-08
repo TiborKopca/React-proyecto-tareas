@@ -21,8 +21,10 @@
   --color-font-dark: rgb(201 201 201);
   --color-font-light: rgb(223, 223, 223);
   --color-font-white: rgb(247, 247, 247);
-
+  --color-font-black: rgb(24, 24, 24);
+  
   --color-border-light: rgb(224, 224, 224);
+  --color-border-dark: rgb(117, 117, 117);
 
   --shadow-color-black: rgb(0, 0, 0);
 
